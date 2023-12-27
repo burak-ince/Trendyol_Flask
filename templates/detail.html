@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site - Product Detail</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/detail.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <h1>Product Detail</h1>
+    </header>
+    
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ url_for('home') }}">Home Page</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ product['description'] }}</li>
+        </ol>
+    </nav>
+    
+    <div class="product-detail-container">
+        <div class="product-image">
+            <img src="{{ url_for('static', filename='images/' + product['image']) }}" alt="{{ product['description'] }}">
+        </div>
+        
+        <div class="product-details">
+            <h2>{{ product['description'] }}</h2>
+            <p>Product Number: {{ product['product_no'] }}</p>
+            <p>Categories: {{ product['categories'] }}</p>
+            <p>Cost: ${{ product['cost'] }}</p>
+        </div>
+    </div>
+    <a href="{{ url_for('home') }}" class="backbutton">Back</a>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.form-control {
+    width: 300px;
+}
+
+.search_button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.product-container {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product{
+    width: 18%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f1f1f1;
+    a{
+        text-decoration: none;
+        color: orange;
+    }
+}
+
+
